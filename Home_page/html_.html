@@ -1,37 +1,66 @@
 <html>
 <head>
-  <title>LOLCAT CLOCK</title>
+  <title>Routine</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css_.css">
+
+
+
 </head>
-<body>
+<body onload="startTime()">
+  
   <div class="page">
     <header>
       <h1>Daily Routine</h1>
     </header>
 
     <h4>
-      Never give up ! <br>
-      <span id="clock">Clock goes here</span>
-    </h4>
-
-    <img id="lolcatImage" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg" alt="lolcat">
-
-    <blockquote id="timeEvent">This is where time events are reported</blockquote>
-
-
-    set Wake Up Time
-    <select id="wakeUpTimeSelector">
+      Never give up ! <br><br></h4>
+    <h1 id="day"></h1>
+      <table >
+      <tr>
+        <td> Wake Up Time</td>
+      <td><select id="wakeup">
+        <option value="1">1 AM - 2AM</option>
+        <option value="2">2 AM - 3AM</option>
+        <option value="3">3 AM - 4AM</option>
+        <option value="4">4 AM - 5AM</option>
+        <option value="5" selected>5 AM - 6AM</option>
+        <option value="6">6 AM - 7AM</option>
+        <option value="7">7 AM - 8AM</option>
+        <option value="8" >8 AM - 9AM</option>
+        <option value="9">9 AM - 10AM</option>
+        <option value="10">10 AM - 11AM</option>
+        <option value="11">11 AM - 12PM</option>
+        <option value="12">12 PM - 1PM</option>
+        <option value="13">1 PM - 2PM</option>
+        <option value="14">2 PM - 3PM</option>
+        <option value="15">3 PM - 4PM</option>
+        <option value="16">4 PM - 5PM</option>
+        <option value="17">5 PM - 6PM</option>
+        <option value="18">6 PM - 7PM</option>
+        <option value="19">7 PM - 8PM</option>
+        <option value="20">8 PM - 9PM</option>
+        <option value="21">9 PM - 10PM</option>
+        <option value="22">10 PM - 11PM</option>
+        <option value="23">11 PM - 12AM</option>
+        <option value="24">12 AM - 1AM</option>
+      </select>
+    </td>
+    </tr>
+    <tr>
+      <td> Morning workout Time</td>
+    <td><select id="workout">
       <option value="1">1 AM - 2AM</option>
       <option value="2">2 AM - 3AM</option>
       <option value="3">3 AM - 4AM</option>
       <option value="4">4 AM - 5AM</option>
       <option value="5">5 AM - 6AM</option>
-      <option value="6">6 AM - 7AM</option>
+      <option value="6"selected>6 AM - 7AM</option>
       <option value="7">7 AM - 8AM</option>
-      <option value="8" selected>8 AM - 9AM</option>
+      <option value="8" >8 AM - 9AM</option>
       <option value="9">9 AM - 10AM</option>
       <option value="10">10 AM - 11AM</option>
       <option value="11">11 AM - 12PM</option>
@@ -49,9 +78,41 @@
       <option value="23">11 PM - 12AM</option>
       <option value="24">12 AM - 1AM</option>
     </select>
-    <br>
-    set Study Time
-      <select id="lunchTimeSelector">
+  </td>
+  </tr>
+    <tr>
+      <td> Breakfast Time</td>
+    <td><select id="breakfast">
+      <option value="1">1 AM - 2AM</option>
+      <option value="2">2 AM - 3AM</option>
+      <option value="3">3 AM - 4AM</option>
+      <option value="4">4 AM - 5AM</option>
+      <option value="5">5 AM - 6AM</option>
+      <option value="6">6 AM - 7AM</option>
+      <option value="7" selected>7 AM - 8AM</option>
+      <option value="8" >8 AM - 9AM</option>
+      <option value="9">9 AM - 10AM</option>
+      <option value="10">10 AM - 11AM</option>
+      <option value="11">11 AM - 12PM</option>
+      <option value="12">12 PM - 1PM</option>
+      <option value="13">1 PM - 2PM</option>
+      <option value="14">2 PM - 3PM</option>
+      <option value="15">3 PM - 4PM</option>
+      <option value="16">4 PM - 5PM</option>
+      <option value="17">5 PM - 6PM</option>
+      <option value="18">6 PM - 7PM</option>
+      <option value="19">7 PM - 8PM</option>
+      <option value="20">8 PM - 9PM</option>
+      <option value="21">9 PM - 10PM</option>
+      <option value="22">10 PM - 11PM</option>
+      <option value="23">11 PM - 12AM</option>
+      <option value="24">12 AM - 1AM</option>
+    </select>
+  </td>
+  </tr>
+    <tr>
+      <td> Study/work Time</td>
+      <td><select id="work">
         <option value="1">1 AM - 2AM</option>
         <option value="2">2 AM - 3AM</option>
         <option value="3">3 AM - 4AM</option>
@@ -60,10 +121,10 @@
         <option value="6">6 AM - 7AM</option>
         <option value="7">7 AM - 8AM</option>
         <option value="8">8 AM - 9AM</option>
-        <option value="9">9 AM - 10AM</option>
+        <option value="9" selected>9 AM - 10AM</option>
         <option value="10">10 AM - 11AM</option>
         <option value="11">11 AM - 12PM</option>
-        <option value="12" selected>12 PM - 1PM</option>
+        <option value="12" >12 PM - 1PM</option>
         <option value="13">1 PM - 2PM</option>
         <option value="14">2 PM - 3PM</option>
         <option value="15">3 PM - 4PM</option>
@@ -76,10 +137,11 @@
         <option value="22">10 PM - 11PM</option>
         <option value="23">11 PM - 12AM</option>
         <option value="24">12 AM - 1AM</option>
-      </select>
-    <br>
-    set GYM Time
-    <select id="napTimeSelector">
+      </select></td>
+    </tr>
+    <tr>
+      <td> Lunch Time</td>
+    <td><select id="lunch">
       <option value="1">1 AM - 2AM</option>
       <option value="2">2 AM - 3AM</option>
       <option value="3">3 AM - 4AM</option>
@@ -91,10 +153,10 @@
       <option value="9">9 AM - 10AM</option>
       <option value="10">10 AM - 11AM</option>
       <option value="11">11 AM - 12PM</option>
-      <option value="12">12 PM - 1PM</option>
-      <option value="13">1 PM - 2PM</option>
+      <option value="12" >12 PM - 1PM</option>
+      <option value="13" selected>1 PM - 2PM</option>
       <option value="14">2 PM - 3PM</option>
-      <option value="15" selected>3 PM - 4PM</option>
+      <option value="15" >3 PM - 4PM</option>
       <option value="16">4 PM - 5PM</option>
       <option value="17">5 PM - 6PM</option>
       <option value="18">6 PM - 7PM</option>
@@ -104,15 +166,232 @@
       <option value="22">10 PM - 11PM</option>
       <option value="23">11 PM - 12AM</option>
       <option value="24">12 AM - 1AM</option>
-      </select>
-    <br>
-    <button id="partyTimeButton">Party!</button>
+      </select></td>
+  </tr>
+  <tr>
+    <td> Afternoon study/work Time</td>
+  <td><select id="aft_work">
+    <option value="1">1 AM - 2AM</option>
+    <option value="2">2 AM - 3AM</option>
+    <option value="3">3 AM - 4AM</option>
+    <option value="4">4 AM - 5AM</option>
+    <option value="5">5 AM - 6AM</option>
+    <option value="6">6 AM - 7AM</option>
+    <option value="7">7 AM - 8AM</option>
+    <option value="8">8 AM - 9AM</option>
+    <option value="9">9 AM - 10AM</option>
+    <option value="10">10 AM - 11AM</option>
+    <option value="11">11 AM - 12PM</option>
+    <option value="12">12 PM - 1PM</option>
+    <option value="13">1 PM - 2PM</option>
+    <option value="14">2 PM - 3PM</option>
+    <option value="15" selected>3 PM - 4PM</option>
+    <option value="16">4 PM - 5PM</option>
+    <option value="17">5 PM - 6PM</option>
+    <option value="18">6 PM - 7PM</option>
+    <option value="19">7 PM - 8PM</option>
+    <option value="20">8 PM - 9PM</option>
+    <option value="21">9 PM - 10PM</option>
+    <option value="22">10 PM - 11PM</option>
+    <option value="23">11 PM - 12AM</option>
+    <option value="24">12 AM - 1AM</option>
+    </select></td>
+
+</tr>
+<tr>
+  <td> Leisure Time</td>
+<td><select id="leisure">
+  <option value="1">1 AM - 2AM</option>
+  <option value="2">2 AM - 3AM</option>
+  <option value="3">3 AM - 4AM</option>
+  <option value="4">4 AM - 5AM</option>
+  <option value="5">5 AM - 6AM</option>
+  <option value="6">6 AM - 7AM</option>
+  <option value="7">7 AM - 8AM</option>
+  <option value="8">8 AM - 9AM</option>
+  <option value="9">9 AM - 10AM</option>
+  <option value="10">10 AM - 11AM</option>
+  <option value="11">11 AM - 12PM</option>
+  <option value="12">12 PM - 1PM</option>
+  <option value="13">1 PM - 2PM</option>
+  <option value="14">2 PM - 3PM</option>
+  <option value="15" >3 PM - 4PM</option>
+  <option value="16" selected>4 PM - 5PM</option>
+  <option value="17">5 PM - 6PM</option>
+  <option value="18">6 PM - 7PM</option>
+  <option value="19">7 PM - 8PM</option>
+  <option value="20">8 PM - 9PM</option>
+  <option value="21">9 PM - 10PM</option>
+  <option value="22">10 PM - 11PM</option>
+  <option value="23">11 PM - 12AM</option>
+  <option value="24">12 AM - 1AM</option>
+  </select></td>
+</tr>
+<tr>
+  <td> Meditation Time</td>
+<td><select id="meditation">
+  <option value="1">1 AM - 2AM</option>
+  <option value="2">2 AM - 3AM</option>
+  <option value="3">3 AM - 4AM</option>
+  <option value="4">4 AM - 5AM</option>
+  <option value="5">5 AM - 6AM</option>
+  <option value="6">6 AM - 7AM</option>
+  <option value="7">7 AM - 8AM</option>
+  <option value="8">8 AM - 9AM</option>
+  <option value="9">9 AM - 10AM</option>
+  <option value="10">10 AM - 11AM</option>
+  <option value="11">11 AM - 12PM</option>
+  <option value="12">12 PM - 1PM</option>
+  <option value="13">1 PM - 2PM</option>
+  <option value="14">2 PM - 3PM</option>
+  <option value="15" >3 PM - 4PM</option>
+  <option value="16">4 PM - 5PM</option>
+  <option value="17" selected>5 PM - 6PM</option>
+  <option value="18">6 PM - 7PM</option>
+  <option value="19">7 PM - 8PM</option>
+  <option value="20">8 PM - 9PM</option>
+  <option value="21">9 PM - 10PM</option>
+  <option value="22">10 PM - 11PM</option>
+  <option value="23">11 PM - 12AM</option>
+  <option value="24">12 AM - 1AM</option>
+  </select></td>
+</tr>
+<tr>
+<td> Personal Time</td>
+<td><select id="personal">
+  <option value="1">1 AM - 2AM</option>
+  <option value="2">2 AM - 3AM</option>
+  <option value="3">3 AM - 4AM</option>
+  <option value="4">4 AM - 5AM</option>
+  <option value="5">5 AM - 6AM</option>
+  <option value="6">6 AM - 7AM</option>
+  <option value="7">7 AM - 8AM</option>
+  <option value="8">8 AM - 9AM</option>
+  <option value="9">9 AM - 10AM</option>
+  <option value="10">10 AM - 11AM</option>
+  <option value="11">11 AM - 12PM</option>
+  <option value="12">12 PM - 1PM</option>
+  <option value="13">1 PM - 2PM</option>
+  <option value="14">2 PM - 3PM</option>
+  <option value="15" >3 PM - 4PM</option>
+  <option value="16">4 PM - 5PM</option>
+  <option value="17">5 PM - 6PM</option>
+  <option value="18" selected>6 PM - 7PM</option>
+  <option value="19">7 PM - 8PM</option>
+  <option value="20">8 PM - 9PM</option>
+  <option value="21">9 PM - 10PM</option>
+  <option value="22">10 PM - 11PM</option>
+  <option value="23">11 PM - 12AM</option>
+  <option value="24">12 AM - 1AM</option>
+  </select></td>
+</tr>
+<tr>
+<td> Dinner Time</td>
+<td><select id="dinner">
+  <option value="1">1 AM - 2AM</option>
+  <option value="2">2 AM - 3AM</option>
+  <option value="3">3 AM - 4AM</option>
+  <option value="4">4 AM - 5AM</option>
+  <option value="5">5 AM - 6AM</option>
+  <option value="6">6 AM - 7AM</option>
+  <option value="7">7 AM - 8AM</option>
+  <option value="8">8 AM - 9AM</option>
+  <option value="9">9 AM - 10AM</option>
+  <option value="10">10 AM - 11AM</option>
+  <option value="11">11 AM - 12PM</option>
+  <option value="12">12 PM - 1PM</option>
+  <option value="13">1 PM - 2PM</option>
+  <option value="14">2 PM - 3PM</option>
+  <option value="15" >3 PM - 4PM</option>
+  <option value="16">4 PM - 5PM</option>
+  <option value="17">5 PM - 6PM</option>
+  <option value="18">6 PM - 7PM</option>
+  <option value="19">7 PM - 8PM</option>
+  <option value="20" selected>8 PM - 9PM</option>
+  <option value="21">9 PM - 10PM</option>
+  <option value="22">10 PM - 11PM</option>
+  <option value="23">11 PM - 12AM</option>
+  <option value="24">12 AM - 1AM</option>
+  </select></td>
+
+</tr>
+<tr>
+  <td> Sleep Time</td>
+  <td><select id="sleep">
+    <option value="1">1 AM - 2AM</option>
+    <option value="2">2 AM - 3AM</option>
+    <option value="3">3 AM - 4AM</option>
+    <option value="4">4 AM - 5AM</option>
+    <option value="5">5 AM - 6AM</option>
+    <option value="6">6 AM - 7AM</option>
+    <option value="7">7 AM - 8AM</option>
+    <option value="8">8 AM - 9AM</option>
+    <option value="9">9 AM - 10AM</option>
+    <option value="10">10 AM - 11AM</option>
+    <option value="11">11 AM - 12PM</option>
+    <option value="12">12 PM - 1PM</option>
+    <option value="13">1 PM - 2PM</option>
+    <option value="14">2 PM - 3PM</option>
+    <option value="15" selected>3 PM - 4PM</option>
+    <option value="16">4 PM - 5PM</option>
+    <option value="17">5 PM - 6PM</option>
+    <option value="18">6 PM - 7PM</option>
+    <option value="19">7 PM - 8PM</option>
+    <option value="20">8 PM - 9PM</option>
+    <option value="21">9 PM - 10PM</option>
+    <option value="22" selected>10 PM - 11PM</option>
+    <option value="23">11 PM - 12AM</option>
+    <option value="24">12 AM - 1AM</option>
+    </select></td>
+  
+  </tr>
+  </table>
+    <button id="partyTimeButton">OKAY</button>
 
     <footer>
       <p>&copy; Deekshith H C</p>
     </footer>
   </div>
 
-  <script type="text/javascript" src="js_.js"></script>
+    
+  <script type="text/javascript">
+  
+    function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    var meridian = "AM";
+    
+    m = checkTime(m);
+    s = checkTime(s);
+    var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var days = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday","Friday","Saturday"];
+      // Set hours
+      if (h >= 12)
+      {
+        meridian = "PM";
+      }
+  
+      if (h > 12)
+      {
+        h = h - 12;
+        h = checkTime(h);
+      }
+    var dat =  today.getDate() + " " + months[today.getMonth()]  + "," + " " + today.getFullYear() + " - " + days[today.getDay()];;
+    document.getElementById("day").innerHTML = dat;  
+    var timee = h + ":" + m + ":" + s +  meridian;
+    document.getElementById("date").innerHTML = timee;
+    var t = setTimeout(startTime, 500);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+
+  </script>
+  
+
+
 </body>
 </html>
