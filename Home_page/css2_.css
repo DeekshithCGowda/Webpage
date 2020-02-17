@@ -1,0 +1,30 @@
+.routines{
+    background-color: black;
+    height: 100vh;
+    padding-top: 70px;
+    border-right: 10px solid rgb(77, 194, 230);
+}
+.timer{
+    padding: 40px;
+    padding-top: 30vh;
+    background-color: black;
+    height: 100vh;
+    text-align: center;
+    
+}
+.card{
+    background-color: black;
+    border: 2px solid rgb(77, 194, 230);
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.card-text{
+    -webkit-text-stroke: 1px rgb(77, 194, 230);
+    text-align: center;
+}
+.timer-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 200px;
+    
+}
