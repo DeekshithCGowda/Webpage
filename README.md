@@ -1,4 +1,4 @@
-# Webpage
+# Routine Buddy
 
 This project is a basic front end web page; languages used : HTML, CSS, Javascript
 
@@ -13,6 +13,8 @@ This project is a basic front end web page; languages used : HTML, CSS, Javascri
       ![](img/1.png)
 
       ![](img/2.png)
+
+
       
    2. Timer page
       This page is the main background running page, the timer automatically adjusts according to the entered routine and alerts the user after every specific activity, if the user is distracted in any other activity then the alert box pops up reminding the things he/she is supposed to do at that time.
