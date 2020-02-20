@@ -1,4 +1,4 @@
-# Routine Buddy
+# Routine Buddy - a web application for Time Management
 
 This project is a basic front end web page; languages used : HTML, CSS, Javascript
 
