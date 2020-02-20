@@ -10,10 +10,12 @@ This project is a basic front end web page; languages used : HTML, CSS, Javascri
       As different people have different lifestyle, we can't preset the daily activity. So there's a customizable preset page which is available and user can enter their daily routine activity.
       
       
-      ![](img/)
+      ![](img/1.png)
+
+      ![](img/2.png)
       
    2. Timer page
       This page is the main background running page, the timer automatically adjusts according to the entered routine and alerts the user after every specific activity, if the user is distracted in any other activity then the alert box pops up reminding the things he/she is supposed to do at that time.
       
       
-      ![](img/)
+      ![](img/3.png)
