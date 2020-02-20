@@ -10,9 +10,9 @@ This project is a basic front end web page; languages used : HTML, CSS, Javascri
       As different people have different lifestyle, we can't preset the daily activity. So there's a customizable preset page which is available and user can enter their daily routine activity.
       
       
-      ![](img/1.png)
+      ![](img/4.png)
 
-      ![](img/2.png)
+      ![](img/5.png)
 
 
       
